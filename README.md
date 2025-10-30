@@ -2,6 +2,8 @@
 
 **Developer:** Darrell Mesa | 📧 [darrell.mesa@pm-ss.org](mailto:darrell.mesa@pm-ss.org)
 
+https://github.com/user-attachments/assets/85c77512-8cbc-4421-9029-190ff7417e85
+
 A sophisticated AI-powered system for real-time cursor, keyboard, and OS collaboration using Microsoft Phi Silica 3.6
 model with advanced automation capabilities, natural conversational interface, and **verified physical cursor control**.
 
