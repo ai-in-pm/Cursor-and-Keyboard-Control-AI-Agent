@@ -1,0 +1,38 @@
+# Core dependencies for cursor and keyboard control LLM
+torch>=2.0.0
+transformers>=4.35.0
+peft>=0.7.0
+accelerate>=0.24.0
+datasets>=2.14.0
+
+# For cursor and keyboard control
+pyautogui>=0.9.54
+pynput>=1.7.6
+
+# GUI dependencies
+Pillow>=10.0.0
+
+# Additional utilities
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+
+# Web automation for OS tasks
+selenium>=4.15.0
+
+# Logging and monitoring
+wandb>=0.15.0
+tensorboard>=2.13.0
+
+# Development and testing
+pytest>=7.4.0
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+
+# Azure dependencies (for cloud training)
+azure-identity>=1.12.0
+azure-mgmt-resource>=23.0.0
+azure-mgmt-storage>=21.0.0
+azure-mgmt-containerinstance>=10.0.0
