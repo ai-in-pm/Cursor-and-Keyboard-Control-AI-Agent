@@ -1,0 +1,264 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an advanced OS automation agent that can perform human-level tasks on Windows, Linux, and macOS. Respond with ACTION: commands for file operations, window management, application control, system monitoring, and web automation."
+    },
+    {
+      "role": "user",
+      "content": "Create a new text file called 'notes.txt' in the current directory"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_file', 'notes.txt')"
+    },
+    {
+      "role": "user",
+      "content": "List all files in the current directory"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('list_directory', '.')"
+    },
+    {
+      "role": "user",
+      "content": "Check the current CPU usage"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: system_monitoring('cpu_usage')"
+    },
+    {
+      "role": "user",
+      "content": "Check memory usage and disk space"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: system_monitoring('memory_usage')\nACTION: system_monitoring('disk_usage')"
+    },
+    {
+      "role": "user",
+      "content": "Open Google Chrome browser"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: application_operations('launch', 'chrome')"
+    },
+    {
+      "role": "user",
+      "content": "Open a web browser and go to google.com"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: browser_operations('open_url', 'https://www.google.com')"
+    },
+    {
+      "role": "user",
+      "content": "Create a new folder called 'documents' and move all text files into it"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_directory', 'documents')\nACTION: file_operations('move', '*.txt', 'documents/')"
+    },
+    {
+      "role": "user",
+      "content": "What's the battery level on this computer?"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: system_monitoring('battery_status')"
+    },
+    {
+      "role": "user",
+      "content": "Show me all running applications"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: application_operations('list_running_apps')"
+    },
+    {
+      "role": "user",
+      "content": "Close the calculator application"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: application_operations('close', 'calculator')"
+    },
+    {
+      "role": "user",
+      "content": "Minimize the current active window"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: window_operations('minimize_window', '')"
+    },
+    {
+      "role": "user",
+      "content": "Maximize the Notepad window"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: window_operations('maximize_window', 'Notepad')"
+    },
+    {
+      "role": "user",
+      "content": "Copy the file 'report.pdf' to the backup folder"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('copy', 'report.pdf', 'backup/')"
+    },
+    {
+      "role": "user",
+      "content": "Delete the temporary folder and all its contents"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('delete', 'temporary')"
+    },
+    {
+      "role": "user",
+      "content": "Open Microsoft Word and create a new document"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: application_operations('launch', 'winword')\nACTION: type_text('New Document')\nACTION: press_key_combination(['ctrl', 's'])\nACTION: type_text('document')\nACTION: press_key('enter')"
+    },
+    {
+      "role": "user",
+      "content": "Take a screenshot and save it as 'screen.png'"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: press_key_combination(['win', 'shift', 's'])\nACTION: move_cursor(100, 100)\nACTION: mouse_down('left')\nACTION: move_cursor(800, 600)\nACTION: mouse_up('left')\nACTION: press_key_combination(['ctrl', 's'])\nACTION: type_text('screen.png')\nACTION: press_key('enter')"
+    },
+    {
+      "role": "user",
+      "content": "Search for 'python programming' on Google"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: browser_operations('open_url', 'https://www.google.com')\nACTION: browser_operations('type_text', 'input[name=q]', 'python programming')\nACTION: browser_operations('click_element', 'input[type=submit]')"
+    },
+    {
+      "role": "user",
+      "content": "Check network connection status"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: system_monitoring('network_info')"
+    },
+    {
+      "role": "user",
+      "content": "Create a backup of important documents"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_directory', 'backup')\nACTION: file_operations('copy', 'documents/*', 'backup/')\nACTION: file_operations('copy', 'pictures/*', 'backup/')\nACTION: file_operations('copy', 'downloads/*', 'backup/')"
+    },
+    {
+      "role": "user",
+      "content": "Organize files by type into folders"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_directory', 'images')\nACTION: file_operations('create_directory', 'documents')\nACTION: file_operations('create_directory', 'archives')\nACTION: file_operations('move', '*.jpg', 'images/')\nACTION: file_operations('move', '*.png', 'images/')\nACTION: file_operations('move', '*.pdf', 'documents/')\nACTION: file_operations('move', '*.docx', 'documents/')\nACTION: file_operations('move', '*.zip', 'archives/')\nACTION: file_operations('move', '*.rar', 'archives/')"
+    },
+    {
+      "role": "user",
+      "content": "Set up a development environment"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_directory', 'dev')\nACTION: file_operations('create_directory', 'dev/projects')\nACTION: file_operations('create_directory', 'dev/tools')\nACTION: browser_operations('open_url', 'https://code.visualstudio.com')\nACTION: browser_operations('click_element', '.download-button')\nACTION: move_cursor(500, 500)\nACTION: mouse_click('left')\nACTION: type_text('VS Code installed successfully')"
+    },
+    {
+      "role": "user",
+      "content": "Monitor system performance for 30 seconds"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: system_monitoring('cpu_usage')\nACTION: system_monitoring('memory_usage')\nACTION: system_monitoring('disk_usage')\nACTION: wait(30)\nACTION: system_monitoring('cpu_usage')\nACTION: system_monitoring('memory_usage')\nACTION: system_monitoring('disk_usage')"
+    },
+    {
+      "role": "user",
+      "content": "Clean up temporary files and empty the recycle bin"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('delete', 'temp/*')\nACTION: file_operations('delete', '*.tmp')\nACTION: file_operations('delete', '*.log')\nACTION: move_cursor(50, 1050)\nACTION: mouse_click('right')\nACTION: move_cursor_relative(0, -100)\nACTION: mouse_click('left')"
+    },
+    {
+      "role": "user",
+      "content": "Take a system health check"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: system_monitoring('cpu_usage')\nACTION: system_monitoring('memory_usage')\nACTION: system_monitoring('disk_usage')\nACTION: system_monitoring('battery_status')\nACTION: system_monitoring('network_info')\nACTION: application_operations('list_running_apps')"
+    },
+    {
+      "role": "user",
+      "content": "Create a presentation with slides"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: application_operations('launch', 'powerpnt')\nACTION: wait(3)\nACTION: type_text('My Presentation')\nACTION: press_key('enter')\nACTION: press_key_combination(['ctrl', 'm'])\nACTION: type_text('Slide 1')\nACTION: press_key_combination(['ctrl', 'm'])\nACTION: type_text('Slide 2')\nACTION: press_key_combination(['ctrl', 's'])\nACTION: type_text('presentation')\nACTION: press_key('enter')"
+    },
+    {
+      "role": "user",
+      "content": "Send an email with attachment"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: browser_operations('open_url', 'https://gmail.com')\nACTION: browser_operations('click_element', '.z0')\nACTION: browser_operations('type_text', 'textarea[name=to]', 'recipient@example.com')\nACTION: browser_operations('type_text', 'input[name=subjectbox]', 'Important Document')\nACTION: browser_operations('type_text', 'div[aria-label=Message Body]', 'Please find the attached document.')\nACTION: browser_operations('click_element', 'div[command=Files]')\nACTION: type_text('document.pdf')\nACTION: press_key('enter')\nACTION: browser_operations('click_element', 'div[aria-label=Send]')"
+    },
+    {
+      "role": "user",
+      "content": "Set up a meeting in calendar"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: browser_operations('open_url', 'https://calendar.google.com')\nACTION: browser_operations('click_element', '.gb_O')\nACTION: type_text('Team Meeting')\nACTION: press_key('tab')\nACTION: type_text('2:00 PM')\nACTION: press_key('tab')\nACTION: type_text('3:00 PM')\nACTION: browser_operations('click_element', 'button[aria-label=Save]')"
+    },
+    {
+      "role": "user",
+      "content": "Download and install a software package"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: browser_operations('open_url', 'https://www.python.org/downloads')\nACTION: browser_operations('click_element', '.download-button')\nACTION: wait(10)\nACTION: move_cursor(960, 540)\nACTION: mouse_click('left')\nACTION: press_key('enter')\nACTION: wait(30)\nACTION: press_key('enter')"
+    },
+    {
+      "role": "user",
+      "content": "Create a Python script that prints hello world"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_file', 'hello.py')\nACTION: application_operations('launch', 'notepad')\nACTION: type_text('print(\\\"Hello, World!\\\")')\nACTION: press_key_combination(['ctrl', 's'])\nACTION: type_text('hello.py')\nACTION: press_key('enter')"
+    },
+    {
+      "role": "user",
+      "content": "Take a full system backup"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_directory', 'system_backup')\nACTION: file_operations('copy', 'documents/*', 'system_backup/')\nACTION: file_operations('copy', 'pictures/*', 'system_backup/')\nACTION: file_operations('copy', 'downloads/*', 'system_backup/')\nACTION: file_operations('copy', 'desktop/*', 'system_backup/')\nACTION: file_operations('copy', 'music/*', 'system_backup/')"
+    },
+    {
+      "role": "user",
+      "content": "Optimize system performance"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: application_operations('close', 'unnecessary_app1')\nACTION: application_operations('close', 'unnecessary_app2')\nACTION: file_operations('delete', 'temp/*')\nACTION: file_operations('delete', '*.tmp')\nACTION: system_monitoring('memory_usage')\nACTION: system_monitoring('cpu_usage')"
+    },
+    {
+      "role": "user",
+      "content": "Create a database of system information"
+    },
+    {
+      "role": "assistant",
+      "content": "ACTION: file_operations('create_file', 'system_info.txt')\nACTION: application_operations('launch', 'notepad')\nACTION: type_text('System Information:')\nACTION: press_key('enter')\nACTION: type_text('CPU Usage: ')\nACTION: system_monitoring('cpu_usage')\nACTION: type_text('Memory Usage: ')\nACTION: system_monitoring('memory_usage')\nACTION: type_text('Disk Usage: ')\nACTION: system_monitoring('disk_usage')\nACTION: press_key_combination(['ctrl', 's'])\nACTION: type_text('system_info.txt')\nACTION: press_key('enter')"
+    }
+  ]
+}

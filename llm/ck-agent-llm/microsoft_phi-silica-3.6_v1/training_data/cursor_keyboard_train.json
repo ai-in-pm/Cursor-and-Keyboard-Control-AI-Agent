@@ -1,0 +1,48 @@
+{"messages":[{"role":"user","content":"Move the cursor to the top left corner of the screen"},{"role":"assistant","content":"ACTION: move_cursor(0, 0)"}]}
+{"messages":[{"role":"user","content":"Click the left mouse button"},{"role":"assistant","content":"ACTION: mouse_click(left)"}]}
+{"messages":[{"role":"user","content":"Double click on the current cursor position"},{"role":"assistant","content":"ACTION: mouse_double_click(left)"}]}
+{"messages":[{"role":"user","content":"Right click at the current location"},{"role":"assistant","content":"ACTION: mouse_click(right)"}]}
+{"messages":[{"role":"user","content":"Scroll up three times"},{"role":"assistant","content":"ACTION: mouse_scroll(3)"}]}
+{"messages":[{"role":"user","content":"Scroll down five times"},{"role":"assistant","content":"ACTION: mouse_scroll(-5)"}]}
+{"messages":[{"role":"user","content":"Move cursor to coordinates x=500, y=300"},{"role":"assistant","content":"ACTION: move_cursor(500, 300)"}]}
+{"messages":[{"role":"user","content":"Type 'Hello World' using the keyboard"},{"role":"assistant","content":"ACTION: type_text('Hello World')"}]}
+{"messages":[{"role":"user","content":"Press the Enter key"},{"role":"assistant","content":"ACTION: press_key('enter')"}]}
+{"messages":[{"role":"user","content":"Press Ctrl+C to copy"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'c'])"}]}
+{"messages":[{"role":"user","content":"Press Alt+Tab to switch windows"},{"role":"assistant","content":"ACTION: press_key_combination(['alt', 'tab'])"}]}
+{"messages":[{"role":"user","content":"Drag from current position to x=100, y=100"},{"role":"assistant","content":"ACTION: mouse_drag(100, 100)"}]}
+{"messages":[{"role":"user","content":"Move cursor 50 pixels to the right"},{"role":"assistant","content":"ACTION: move_cursor_relative(50, 0)"}]}
+{"messages":[{"role":"user","content":"Move cursor 100 pixels down"},{"role":"assistant","content":"ACTION: move_cursor_relative(0, 100)"}]}
+{"messages":[{"role":"user","content":"Click and hold the left mouse button"},{"role":"assistant","content":"ACTION: mouse_down(left)"}]}
+{"messages":[{"role":"user","content":"Release the left mouse button"},{"role":"assistant","content":"ACTION: mouse_up(left)"}]}
+{"messages":[{"role":"user","content":"Press the Escape key"},{"role":"assistant","content":"ACTION: press_key('escape')"}]}
+{"messages":[{"role":"user","content":"Type a backspace to delete previous character"},{"role":"assistant","content":"ACTION: press_key('backspace')"}]}
+{"messages":[{"role":"user","content":"Press Tab to move to next field"},{"role":"assistant","content":"ACTION: press_key('tab')"}]}
+{"messages":[{"role":"user","content":"Select all text with Ctrl+A"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'a'])"}]}
+{"messages":[{"role":"user","content":"Save the file with Ctrl+S"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 's'])"}]}
+{"messages":[{"role":"user","content":"Open new tab with Ctrl+T"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 't'])"}]}
+{"messages":[{"role":"user","content":"Close current tab with Ctrl+W"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'w'])"}]}
+{"messages":[{"role":"user","content":"Refresh page with F5"},{"role":"assistant","content":"ACTION: press_key('f5')"}]}
+{"messages":[{"role":"user","content":"Take a screenshot with Windows+Shift+S"},{"role":"assistant","content":"ACTION: press_key_combination(['win', 'shift', 's'])"}]}
+{"messages":[{"role":"user","content":"Open Start menu with Windows key"},{"role":"assistant","content":"ACTION: press_key('win')"}]}
+{"messages":[{"role":"user","content":"Minimize window with Windows+D"},{"role":"assistant","content":"ACTION: press_key_combination(['win', 'd'])"}]}
+{"messages":[{"role":"user","content":"Lock computer with Windows+L"},{"role":"assistant","content":"ACTION: press_key_combination(['win', 'l'])"}]}
+{"messages":[{"role":"user","content":"Open Task Manager with Ctrl+Shift+Esc"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'shift', 'esc'])"}]}
+{"messages":[{"role":"user","content":"Copy selected text with Ctrl+C"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'c'])"}]}
+{"messages":[{"role":"user","content":"Paste text with Ctrl+V"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'v'])"}]}
+{"messages":[{"role":"user","content":"Cut selected text with Ctrl+X"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'x'])"}]}
+{"messages":[{"role":"user","content":"Undo last action with Ctrl+Z"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'z'])"}]}
+{"messages":[{"role":"user","content":"Redo last action with Ctrl+Y"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'y'])"}]}
+{"messages":[{"role":"user","content":"Move cursor to center of screen"},{"role":"assistant","content":"ACTION: move_cursor(960, 540)"}]}
+{"messages":[{"role":"user","content":"Click the middle mouse button"},{"role":"assistant","content":"ACTION: mouse_click(middle)"}]}
+{"messages":[{"role":"user","content":"Press Shift+Tab to move to previous field"},{"role":"assistant","content":"ACTION: press_key_combination(['shift', 'tab'])"}]}
+{"messages":[{"role":"user","content":"Type numbers 1 through 10"},{"role":"assistant","content":"ACTION: type_text('12345678910')"}]}
+{"messages":[{"role":"user","content":"Press Space bar"},{"role":"assistant","content":"ACTION: press_key('space')"}]}
+{"messages":[{"role":"user","content":"Press Delete key"},{"role":"assistant","content":"ACTION: press_key('delete')"}]}
+{"messages":[{"role":"user","content":"Press Home key to go to beginning of line"},{"role":"assistant","content":"ACTION: press_key('home')"}]}
+{"messages":[{"role":"user","content":"Press End key to go to end of line"},{"role":"assistant","content":"ACTION: press_key('end')"}]}
+{"messages":[{"role":"user","content":"Press Page Up"},{"role":"assistant","content":"ACTION: press_key('pageup')"}]}
+{"messages":[{"role":"user","content":"Press Page Down"},{"role":"assistant","content":"ACTION: press_key('pagedown')"}]}
+{"messages":[{"role":"user","content":"Press Arrow Up key"},{"role":"assistant","content":"ACTION: press_key('up')"}]}
+{"messages":[{"role":"user","content":"Press Arrow Down key"},{"role":"assistant","content":"ACTION: press_key('down')"}]}
+{"messages":[{"role":"user","content":"Press Arrow Left key"},{"role":"assistant","content":"ACTION: press_key('left')"}]}
+{"messages":[{"role":"user","content":"Press Arrow Right key"},{"role":"assistant","content":"ACTION: press_key('right')"}]}

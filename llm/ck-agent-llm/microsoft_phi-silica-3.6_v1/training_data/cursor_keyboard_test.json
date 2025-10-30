@@ -1,0 +1,20 @@
+{"messages":[{"role":"user","content":"Move the cursor to the bottom right corner"},{"role":"assistant","content":"ACTION: move_cursor(1920, 1080)"}]}
+{"messages":[{"role":"user","content":"Click the right mouse button twice"},{"role":"assistant","content":"ACTION: mouse_double_click(right)"}]}
+{"messages":[{"role":"user","content":"Scroll up once"},{"role":"assistant","content":"ACTION: mouse_scroll(1)"}]}
+{"messages":[{"role":"user","content":"Type 'Goodbye' and press Enter"},{"role":"assistant","content":"ACTION: type_text('Goodbye'); press_key('enter')"}]}
+{"messages":[{"role":"user","content":"Press Ctrl+Shift+N to open new window"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'shift', 'n'])"}]}
+{"messages":[{"role":"user","content":"Move cursor to x=800, y=600"},{"role":"assistant","content":"ACTION: move_cursor(800, 600)"}]}
+{"messages":[{"role":"user","content":"Press Alt+F4 to close window"},{"role":"assistant","content":"ACTION: press_key_combination(['alt', 'f4'])"}]}
+{"messages":[{"role":"user","content":"Drag from current position to x=200, y=200"},{"role":"assistant","content":"ACTION: mouse_drag(200, 200)"}]}
+{"messages":[{"role":"user","content":"Move cursor 25 pixels left"},{"role":"assistant","content":"ACTION: move_cursor_relative(-25, 0)"}]}
+{"messages":[{"role":"user","content":"Press Shift+Enter for new line"},{"role":"assistant","content":"ACTION: press_key_combination(['shift', 'enter'])"}]}
+{"messages":[{"role":"user","content":"Type 'Test Message' and save with Ctrl+S"},{"role":"assistant","content":"ACTION: type_text('Test Message'); press_key_combination(['ctrl', 's'])"}]}
+{"messages":[{"role":"user","content":"Click and drag to select text"},{"role":"assistant","content":"ACTION: mouse_down(left); move_cursor_relative(100, 0); mouse_up(left)"}]}
+{"messages":[{"role":"user","content":"Press Windows key to open start menu"},{"role":"assistant","content":"ACTION: press_key('win')"}]}
+{"messages":[{"role":"user","content":"Press Ctrl+Alt+Delete"},{"role":"assistant","content":"ACTION: press_key_combination(['ctrl', 'alt', 'delete'])"}]}
+{"messages":[{"role":"user","content":"Type email address 'user@example.com'"},{"role":"assistant","content":"ACTION: type_text('user@example.com')"}]}
+{"messages":[{"role":"user","content":"Press Caps Lock"},{"role":"assistant","content":"ACTION: press_key('capslock')"}]}
+{"messages":[{"role":"user","content":"Press Num Lock"},{"role":"assistant","content":"ACTION: press_key('numlock')"}]}
+{"messages":[{"role":"user","content":"Press Scroll Lock"},{"role":"assistant","content":"ACTION: press_key('scrolllock')"}]}
+{"messages":[{"role":"user","content":"Press Print Screen"},{"role":"assistant","content":"ACTION: press_key('printscreen')"}]}
+{"messages":[{"role":"user","content":"Press Pause/Break"},{"role":"assistant","content":"ACTION: press_key('pause')"}]}

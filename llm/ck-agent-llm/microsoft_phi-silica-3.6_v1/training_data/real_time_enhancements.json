@@ -1,0 +1,20 @@
+{"messages":[{"role":"user","content":"Move the cursor smoothly to the top left corner"},{"role":"assistant","content":"ACTION: real_time_move(0, 0, 0.3)"}]}
+{"messages":[{"role":"user","content":"Type this text quickly as if typing in real time"},{"role":"assistant","content":"ACTION: real_time_type('this text quickly as if typing in real time', 0.01)"}]}
+{"messages":[{"role":"user","content":"Move cursor to center of screen with smooth animation"},{"role":"assistant","content":"ACTION: real_time_move(960, 540, 0.4)"}]}
+{"messages":[{"role":"user","content":"Click the button immediately without delay"},{"role":"assistant","content":"ACTION: mouse_click(left)"}]}
+{"messages":[{"role":"user","content":"Type this sentence with human-like speed"},{"role":"assistant","content":"ACTION: real_time_type('this sentence with human-like speed', 0.02)"}]}
+{"messages":[{"role":"user","content":"Move cursor to the close button quickly"},{"role":"assistant","content":"ACTION: real_time_move(1890, 10, 0.2)"}]}
+{"messages":[{"role":"user","content":"Double click on the icon rapidly"},{"role":"assistant","content":"ACTION: mouse_double_click(left)"}]}
+{"messages":[{"role":"user","content":"Scroll down the page smoothly"},{"role":"assistant","content":"ACTION: mouse_scroll(-5)"}]}
+{"messages":[{"role":"user","content":"Type this password quickly but accurately"},{"role":"assistant","content":"ACTION: real_time_type('MySecurePassword123!', 0.005)"}]}
+{"messages":[{"role":"user","content":"Move cursor in a straight line to the search box"},{"role":"assistant","content":"ACTION: real_time_move(500, 100, 0.25)"}]}
+{"messages":[{"role":"user","content":"Press enter key immediately after typing"},{"role":"assistant","content":"ACTION: press_key('enter')"}]}
+{"messages":[{"role":"user","content":"Drag the window to the right side of the screen"},{"role":"assistant","content":"ACTION: mouse_drag(1500, 400)"}]}
+{"messages":[{"role":"user","content":"Type this URL with proper timing"},{"role":"assistant","content":"ACTION: real_time_type('https://www.example.com', 0.015)"}]}
+{"messages":[{"role":"user","content":"Move cursor to the notification area smoothly"},{"role":"assistant","content":"ACTION: real_time_move(1850, 1050, 0.3)"}]}
+{"messages":[{"role":"user","content":"Right click on the file quickly"},{"role":"assistant","content":"ACTION: mouse_click(right)"}]}
+{"messages":[{"role":"user","content":"Type this code snippet with programming speed"},{"role":"assistant","content":"ACTION: real_time_type('def hello_world():\\n    print(\\\"Hello, World!\\\")', 0.008)"}]}
+{"messages":[{"role":"user","content":"Move cursor to the start menu and click"},{"role":"assistant","content":"ACTION: real_time_move(50, 1050, 0.2); mouse_click(left)"}]}
+{"messages":[{"role":"user","content":"Scroll up the document gradually"},{"role":"assistant","content":"ACTION: mouse_scroll(3)"}]}
+{"messages":[{"role":"user","content":"Type this email address carefully"},{"role":"assistant","content":"ACTION: real_time_type('user@example.com', 0.02)"}]}
+{"messages":[{"role":"user","content":"Move cursor across the screen in a fluid motion"},{"role":"assistant","content":"ACTION: real_time_move(100, 100, 0.5)"}]}
